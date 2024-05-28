@@ -13,9 +13,24 @@
               placeholder="Введите входные данные"
             />
           </div>
-          <fwb-button color="purple" size="lg" class="w-full">
+          <fwb-button
+            color="purple"
+            size="lg"
+            class="w-full"
+            @click="() => submit(state.data)"
+          >
             <span class="font-medium">Создать</span>
           </fwb-button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <!-- todo -->
+          <svg class="w-full min-h-screen relative">
+            <circle cx="50%" cy="50%" fill="#030303" r="10" />
+            <line x1="50%" y1="50%" x2="70%" y2="20%" stroke="#030303" />
+          </svg>
+          <!-- todo -->
         </div>
       </div>
     </div>
@@ -23,11 +38,18 @@
 </template>
 
 <script setup lang="ts">
+import { GraphService } from "@/shared/services/graph/graph.service";
 import { FwbTextarea } from "flowbite-vue";
 import { FwbButton } from "flowbite-vue";
 import { ref } from "vue";
 
+const graphService = new GraphService();
+
+const submit = (args: string) => {
+  graphService.setup(args);
+};
+
 const state = ref({
-  data: "",
+  data: "[A,B,10];[A,C,5]",
 });
 </script>
