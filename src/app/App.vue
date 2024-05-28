@@ -4,13 +4,15 @@
       <div
         class="w-full h-fit p-2 sm:p-20 flex justify-center items-start gap-2 flex-wrap-reverse sm:flex-nowrap"
       >
-        <div class="w-full sm:w-1/2">
-          <fwb-textarea
-            v-model="state.data"
-            :rows="4"
-            label="Введите входные данные"
-            placeholder="Введите входные данные"
-          />
+        <div class="w-full xl:w-1/2 *:mb-5">
+          <div>
+            <fwb-textarea
+              v-model="state.data"
+              :rows="4"
+              label="Введите входные данные"
+              placeholder="Введите входные данные"
+            />
+          </div>
           <fwb-button color="purple" size="lg" class="w-full">
             <span class="font-medium">Создать</span>
           </fwb-button>
