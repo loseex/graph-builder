@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div class="w-full h-full min-h-screen relative">
-    <svg class="w-full h-full min-h-screen" id="svg-graph" ref="svg">
+    <svg class="w-full h-full min-h-screen" ref="svg">
       <!-- todo -->
     </svg>
   </div>
