@@ -8,10 +8,14 @@
   --font-default: "Inter", sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: normal;
+  position: relative;
 }
 
 html,
@@ -23,4 +27,5 @@ body,
   color: var(--color-text-primary) !important;
   overflow-x: hidden;
   font-family: var(--font-default);
+  text-rendering: optimizeLegibility;
 }

@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
     "flowbite": "^2.3.0",
     "flowbite-vue": "^0.1.4",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-demi": "^0.14.7"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
